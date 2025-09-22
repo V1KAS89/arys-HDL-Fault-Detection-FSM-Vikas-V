@@ -1,0 +1,61 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Sep 22, 2025 at 04:38:46 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		tb_fsm
+Loading snapshot worklib.tb_fsm:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+5 : state=Normal minor_fault=0 major_fault=0
+15 : state=Normal minor_fault=0 major_fault=0
+[20] Starting FSM operation 
+25 : state=Normal minor_fault=0 major_fault=0
+35 : state=Normal minor_fault=0 major_fault=0
+45 : state=Normal minor_fault=1 major_fault=0
+55 : state=Warning minor_fault=1 major_fault=0
+65 : state=Warning minor_fault=1 major_fault=0
+75 : state=Warning minor_fault=1 major_fault=0
+85 : state=Warning minor_fault=0 major_fault=0
+95 : state=Normal minor_fault=0 major_fault=0
+105 : state=Normal minor_fault=1 major_fault=0
+115 : state=Warning minor_fault=1 major_fault=0
+125 : state=Warning minor_fault=1 major_fault=0
+135 : state=Warning minor_fault=1 major_fault=0
+145 : state=Warning minor_fault=1 major_fault=0
+155 : state=Warning minor_fault=1 major_fault=0
+165 : state=Warning minor_fault=1 major_fault=0
+175 : state=Warning minor_fault=1 major_fault=0
+185 : state=Warning minor_fault=1 major_fault=0
+195 : state=Warning minor_fault=1 major_fault=0
+205 : state=Warning minor_fault=0 major_fault=1
+215 : state=Fault minor_fault=0 major_fault=0
+225 : state=Normal minor_fault=1 major_fault=0
+235 : state=Warning minor_fault=1 major_fault=0
+245 : state=Warning minor_fault=0 major_fault=0
+255 : state=Normal minor_fault=0 major_fault=0
+265 : state=Normal minor_fault=0 major_fault=0
+275 : state=Normal minor_fault=1 major_fault=0
+285 : state=Fault minor_fault=1 major_fault=0
+295 : state=Shutdown minor_fault=1 major_fault=0
+305 : state=Shutdown minor_fault=1 major_fault=0
+315 : state=Shutdown minor_fault=1 major_fault=0
+325 : state=Shutdown minor_fault=1 major_fault=0
+335 : state=Shutdown minor_fault=1 major_fault=0
+345 : state=Shutdown minor_fault=1 major_fault=0
+355 : state=Shutdown minor_fault=1 major_fault=0
+365 : state=Shutdown minor_fault=1 major_fault=0
+375 : state=Shutdown minor_fault=0 major_fault=1
+385 : state=Shutdown minor_fault=0 major_fault=1
+395 : state=Shutdown minor_fault=0 major_fault=1
+405 : state=Shutdown minor_fault=0 major_fault=1
+Simulation complete via $finish(1) at time 410 NS + 0
+./testbench.sv:46     #40 $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Sep 22, 2025 at 04:38:47 EDT  (total: 00:00:01)
